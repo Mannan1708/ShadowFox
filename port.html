@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
     <link rel="stylesheet" href="style.css">
@@ -9,20 +10,19 @@
 </head>
 <body>
     <div id ="header">
+
       <div class="container">
         <nav>
-            <img src="C:\Users\mannan\Desktop\images\LOGO.png" class="logo"> 
+            <img src="./LOGO.png" class="logo"> 
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li> 
+                <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li> 
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-
-        
         </nav>
         <div class="header-text">
             <p>Web Devloper</p>
@@ -35,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="C:\Users\mannan\Desktop\images\profile.jpg">
+                    <img src="./profile.jpg">
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>I'm an enthusiastic and creative individual with a passion for continuous learning and growth. My background is diverse, which has allowed me to develop a well-rounded perspective. I thrive in dynamic environments where I can leverage my skills, and I'm always excited to take on new challenges. In my free time, I enjoy various hobbies and interests that help me stay inspired and balanced.</p>
@@ -132,7 +132,7 @@
             <h1 class="sub-title">My Work</h1> 
             <div class="work-list">
                 <div class="work">
-                    <img src="C:\Users\mannan\Desktop\images\work1.png">
+                    <img src="./work1.png">
                     <div class="layer">
                         <h3>Login Page</h3>
                         <p>A login page is a web page where users enter their credentials, typically a username and password, to gain access to a website or application.</p>
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="C:\Users\mannan\Desktop\images\work2.png">
+                    <img src="./work2.png">
                     <div class="layer">
                         <h3>Game</h3>
                         <p>Game development refers to the process of creating video games or interactive experiences, involving design, programming, art creation, sound production, and testing.</p>
@@ -148,7 +148,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="C:\Users\mannan\Desktop\images\work3.png">
+                    <img src="./work3.png">
                     <div class="layer">
                         <h3>Logo</h3>
                         <p>Logo designing is the process of creating a visual symbol or mark that represents a company, brand, product, or organization. </p>
@@ -168,12 +168,13 @@
                     <p><i class="fa-solid fa-paper-plane"></i>mannanagrawal17@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>9979934238</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/mannan.agrawal.9?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mannan_1708_?igsh=Mm1vZXBtdW1zZTlp"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mannan-agrawal-543354233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/qr/SRRL5R3MTER5G1"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Mannan1708"><i class="fa-brands fa-square-github"></i></a>
                     </div>
-                    <a href="C:\Users\mannan\Desktop\images\CV.pdf" download class="btn btn2">Download CV</a>
+                    <a href="C:\Users\mannan\Desktop\shadowfox\CV.pdf" download class="btn btn2">Download CV</a>
 
                 </div>
                 <div class="contact-right">
@@ -213,10 +214,10 @@
     <script>
         var sidemeu = document.getElementById("sidemenu");
         function openmenu(){
-            sidemeu.style.right = "0";
+            sidemeu.style.display="block";
         }
         function closemenu(){
-            sidemeu.style.right = "-200px";
+            sidemeu.style.display="none"
         }
 
     </script>
